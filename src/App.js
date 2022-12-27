@@ -5,22 +5,40 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from './pages/Register';
+import Write from './pages/Write';
+import Single from './pages/Single';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>This is Home</div>,
+    element: 
+    <Home />,
   },
   {
     path: "/login",
-    element: <div>This is Login</div>,
+    element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
+  },
+  {
+    path: "/single",
+    element: <Single />,
+  },
+  {
+    path: "/write",
+    element: <Write />,
   },
 ]);
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <RouterProvider router={router} />
     </div>
   );
