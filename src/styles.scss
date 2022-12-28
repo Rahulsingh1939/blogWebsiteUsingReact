@@ -2,5 +2,48 @@
     .container{
         
         //Login and Register
+        .auth{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: lightblue ;
+        }
+        h1{ 
+            color:teal;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            background-color: #fff;
+            width: 200px;
+            gap: 20px;
+
+            input{
+                padding: 10px;
+                border:none;
+                border-bottom: 1px solid grey;
+            }
+            button{
+                padding: 10px;
+                border:none;
+                background-color: teal;
+                color: #fff;
+                cursor: pointer;
+            }
+            p{
+                font-size: 12px;
+                text-align: center;
+                color: red;
+            }
+            span{
+                font-size: 12px;
+                text-align: center;
+            }
+        }
     }
 }

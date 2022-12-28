@@ -1,4 +1,3 @@
-import './App.css';
 
 import {
   createBrowserRouter,
@@ -14,6 +13,8 @@ import Single from './pages/Single';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+
+import './styles.scss';
 
 const Layout = () =>{
   return (
