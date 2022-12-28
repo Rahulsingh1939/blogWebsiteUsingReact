@@ -1,5 +1,8 @@
 .app {
+    display: flex;
+    justify-content: center;
     .container{
+        width: 1024px;
         
         //Login and Register
         .auth{
@@ -45,5 +48,15 @@
                 text-align: center;
             }
         }
-    }
+
+        //Navbar
+
+        .navbar{
+            .container{
+                padding: 10px 0px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }  
 }
