@@ -13,7 +13,7 @@ import Write from './pages/Write';
 import Single from './pages/Single';
 
 import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 
 const Layout = () =>{
   return (
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         element: <Write />,
       },
       {
-        path: "/single",
+        path: "/post/:id",
         element: <Single />,
       },
     ]
@@ -50,14 +50,6 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
-  },
-  {
-    path: "/single",
-    element: <Single />,
-  },
-  {
-    path: "/write",
-    element: <Write />,
   },
 ]);
 
