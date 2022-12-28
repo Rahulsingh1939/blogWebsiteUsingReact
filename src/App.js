@@ -2,6 +2,7 @@ import './App.css';
 
 import {
   createBrowserRouter,
+  Outlet,
   RouterProvider,
 } from "react-router-dom";
 
@@ -11,12 +12,23 @@ import Register from './pages/Register';
 import Write from './pages/Write';
 import Single from './pages/Single';
 
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 
+const Layout = () =>{
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+      </>
+  );
+};
 const router = createBrowserRouter([
   {
     path: "/",
-    element: 
-    <Home />,
+    element: <Layout />,
+    
   },
   {
     path: "/login",
