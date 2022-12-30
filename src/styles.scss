@@ -4,6 +4,10 @@
     .container{
         width: 1024px;
         
+        .link{
+            text-decoration: none;
+            color:inherit;
+        }
         //Login and Register
         .auth{
             display: flex;
@@ -56,6 +60,19 @@
                 padding: 10px 0px;
                 display: flex;
                 justify-content: space-between;
+                .logo{
+                    img{
+                        width: 120px;
+                    }
+                }
+                .links{
+                    display: flex;
+                    gap: 20px;
+                    .link{
+                        text-decoration: none;
+                        color:inherit;
+                    }
+                }
             }
         }
     }  
