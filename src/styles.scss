@@ -78,6 +78,23 @@
                         text-decoration: none;
                         color:inherit;
                     }
+
+
+                    .write{
+                        background-color: aqua;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:hover{
+                            background-color: white;
+                            border: 1px solid aqua;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
                 }
             }
         }
