@@ -2,9 +2,11 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
-      This is Footer.
-    </div>
+    <footer>
+      <span className="footer-text">
+        Made with ♥ and <b>React JS.</b>
+      </span> 
+    </footer>
   )
 }
 
